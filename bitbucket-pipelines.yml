@@ -16,12 +16,12 @@ pipelines:
              - npm run build
             artifacts:
              - build/**
-       - step:
-            name: Test
-            script:
-              - npm run test 
-            artificats:
-              - test/**     
+      #  - step:
+      #       name: Test
+      #       script:
+      #         - npm run test 
+      #       artificats:
+      #         - test/**     
        - step:
           name: Deploy to Production
           deployment: Production
